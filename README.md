@@ -114,6 +114,19 @@ Database: `Sqlite3`
 6. Run server
    ```bash
    python manage.py runserver
+
+7. Configure SonarQube locally
+    ```bash
+    apt install unzip
+   adduser sonarqube
+   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
+   unzip *
+   chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
+   chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
+   cd sonarqube-9.4.0.54424/bin/linux-x86-64/
+   ./sonar.sh start
+    
+   
    
   
  ### Snapshots
